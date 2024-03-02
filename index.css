@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color:  antiquewhite;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+nav .logo{
+    color: rgb(73, 52, 52);
+    text-decoration: none;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+nav ul li a {
+    color: rgb(73, 52, 52);
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+    
+}
+nav ul li a:hover {  color: rgb(193, 171, 137);
+}
+  
+
+
+
+
+
+
+
+
+
+
+main{
+    height: 100vh;
+   
+}
+
+
+
+.hero-iamge{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5) , 
+    rgba(0,0,0,0.5)) ,
+    url(M\ BANK.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{
+    color: white;
+    text-align: center;
+}
+.hero-text h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.hero-text p {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px ;
+}
+.hero-a{
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 3px;
+    margin-top: 5px;
+    display:inline-block ;
+    transition: 0.5s;
+}
+.hero-a:hover{
+    color: rgb(244, 241, 238);
+    background-color: rgb(151, 120, 79);
+
+}
+
+
+
+
+
+.container-section{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.service-warpper{
+    padding: 5% 8%;
+}
+.service{
+ display: flex;
+ flex-direction: column;
+ align-items: center;  
+}
+h1{
+    font-size: 40px;
+    
+}
+p{
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 45px;
+   
+}
+
+.card{
+    height: 330px;
+    width: 370px;
+    background-color:rgba(213, 158, 85, 0.745);
+    padding: 3% 1%;
+    transition: 0.7s;
+    box-shadow: 3px 10px 4px  rgb(62, 42, 6);
+}
+.card i{
+    color: rgb(255, 239, 219);
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    padding: 15px;
+
+}
+.card h2{
+    font-size: 35px;
+    margin: 19px 0;
+    font-weight: 500;
+    color: bisque;
+}
+
+.card p {
+    text-align: left;
+    width: 100%;
+    margin: 20px 0;
+    color: bisque;
+
+}
+.card a{
+    text-decoration: none;
+    color: bisque;
+    background-color: rgba(88, 64, 64, 0.707);
+    padding: 9px ;
+    border-radius: 2px;
+    
+
+}
+.card a:hover{
+    background-color: rgb(175, 147, 110);
+}
+
+.card:hover{
+   
+    background-color:  rgba(88, 64, 64, 0.707);
+    transform: translateY(-8px);
+}
+
+@media (max-width:1200px){
+    .cards{
+       
+        grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+
+   
+@media (max-width:900px){
+    .cards{
+       
+        grid-template-columns: repeat(1,1fr);
+}
+.service h1 {
+    font-size:2.5rem ;
+}
+}
+    
+ 
+
+@media (max-width:760px){
+    .service h1 {
+        font-size:2.2rem ;
+    }
+    .card p {
+        width: 60%;
+    }
+}
+   
+
+
+.container-loan{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.service-warpper-loan{
+    padding: 5% 8%;
+}
+
+.service-loan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+
+.service-loan h1{
+    font-size: 40px;
+}
+
+.cards-loan{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.card-loan{
+    height: px;
+    width: 370px;
+    background-color:rgba(95, 79, 2, 0.745);
+    padding: 3% 1%;
+    transition: 0.7s;
+    box-shadow: 3px 10px 4px  rgb(116, 94, 54);
+}
+
+
+.card-loan i{
+    color: rgb(255, 239, 219);
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    padding: 15px;
+}
+   
+.card-loan h2{
+    font-size: 35px;
+    margin: 19px 0;
+    font-weight: 500;
+    color: bisque;
+}
+
+.card-loan a{
+    text-decoration: none;
+    color: bisque;
+    background-color: rgba(57, 40, 40, 0.707);
+    padding: 9px ;
+    border-radius: 2px;
+}
+
+.card-loan a:hover{
+    background-color: rgb(43, 26, 3);
+}
+
+.card-loan:hover{
+   
+    background-color:  rgba(208, 156, 93, 0.945);
+    transform: translateY(-8px);
+}
+
+
+
+
+.news{
+    min-height: 100vh;
+    width: 82%;
+    align-items: center;
+    
+    
+}
+
+.news h1{
+   
+    font-size: 50px;
+   text-align: center;
+   width: 80%;
+   padding: 10px;
+   margin-top: 30px;
+   
+}
+
+.newss h4 ,h3 , p{
+   margin: 15px ;
+   padding: 5px;
+
+}
+.newss h3{
+    font-size: 25px;
+    color: rgb(160, 100, 22);
+}
+.newss p{
+    font-size: 22px;
+}
+.newss h4{
+    font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 25%;
+    background-color:rgb(211, 178, 135) ;
+    padding: 7px 0;
+    border-radius: 20px;
+    margin-top: 3200px;
+    overflow: hidden;
+    
+
+}
+   
+    
+    
+ 
+ .footer .container{
+    max-width: 1260px;
+    margin: auto;
+
+ }
+.footer-col ul{
+    list-style: none;
+   
+
+}
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   letter-spacing: 2px;
+   
+   
+}
+.footer-col{
+    width: 25px;
+    padding: 0 15px;
+}
+.footer-col h4{
+    width: 300px;
+    padding: 10px 0;
+    font-size: 18px;
+    color:rgb(73, 52, 52);
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    position: relative;
+    
+   
+   
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: antiquewhite;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 2px;
+} 
+.footer-col ul  li a{
+    width: 300px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(139, 100, 100);
+    text-decoration: none;
+    display: block;
+    transition: all .5s ease;
+    margin-bottom: 10px;
+}
+.footer-col ul li a:hover{
+    color: rgb(232, 226, 217);
+    padding-left: 10px;
+
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color:  rgb(160, 120, 87);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 40px;
+    transition: all 0.5s ease;
+
+}
+
+.footer-col .social-links a i{
+
+    color: rgb(255, 240, 221);
+    
+    }
+    
+.footer-col .social-links a:hover{
+    color: rgb(188, 171, 149);
+    background-color: rgb(211, 188, 153);
+}
+
+
+   
